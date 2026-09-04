@@ -1,0 +1,1288 @@
+{
+  "version": "3.0.0",
+  "lastUpdated": "2026-08-30",
+  "country": "IN",
+  "gs1NationalPrefix": "890",
+  "fssaiValidationRules": {
+    "length": 14,
+    "pattern": "^[1-3][0-9]{13}$",
+    "businessTypes": {
+      "1": "Central License (Large Scale / Importer / EOU / High Turnover >20Cr)",
+      "2": "State License (Medium Scale Manufacturer / Wholesaler / Distributor)",
+      "3": "Basic Registration (Petty Food Business / Small Scale Retailer)"
+    },
+    "stateCensusCodes": {
+      "00": "Central Licensing Authority / All India (FSSAI HQ)",
+      "01": "Jammu & Kashmir",
+      "02": "Himachal Pradesh",
+      "03": "Punjab",
+      "04": "Chandigarh",
+      "05": "Uttarakhand",
+      "06": "Haryana",
+      "07": "Delhi",
+      "08": "Rajasthan",
+      "09": "Uttar Pradesh",
+      "10": "Bihar",
+      "11": "Sikkim",
+      "12": "Arunachal Pradesh",
+      "13": "Nagaland",
+      "14": "Manipur",
+      "15": "Mizoram",
+      "16": "Tripura",
+      "17": "Meghalaya",
+      "18": "Assam",
+      "19": "West Bengal",
+      "20": "Jharkhand",
+      "21": "Odisha",
+      "22": "Chhattisgarh",
+      "23": "Madhya Pradesh",
+      "24": "Gujarat",
+      "25": "Daman & Diu",
+      "26": "Dadra & Nagar Haveli",
+      "27": "Maharashtra",
+      "28": "Andhra Pradesh (Legacy)",
+      "29": "Karnataka",
+      "30": "Goa",
+      "31": "Lakshadweep",
+      "32": "Kerala",
+      "33": "Tamil Nadu",
+      "34": "Puducherry",
+      "35": "Andaman & Nicobar Islands",
+      "36": "Telangana",
+      "37": "Andhra Pradesh"
+    }
+  },
+  "cinValidationRules": {
+    "length": 21,
+    "pattern": "^[LU][0-9]{5}[A-Z]{2}(18|19|20)[0-9]{2}(PLC|PTC|FTC|GOI|SGC|GAP|GAT|NPL|ULL|ULT)[0-9]{6}$",
+    "listingStatus": {
+      "L": "Listed Company (Public Stock Exchange)",
+      "U": "Unlisted Company"
+    },
+    "validEntityTypes": ["PLC", "PTC", "FTC", "GOI", "SGC", "GAP", "GAT", "NPL", "ULL", "ULT"]
+  },
+  "pantoneStandards": [
+    { "name": "Cadbury Purple", "pantone": "2685 C", "hex": "#330072", "lab": [20.5, 42.1, -50.4], "maxDeltaE": 2.2 },
+    { "name": "Britannia Red", "pantone": "186 C", "hex": "#C8102E", "lab": [45.2, 68.4, 48.1], "maxDeltaE": 2.5 },
+    { "name": "Maggi Yellow", "pantone": "123 C", "hex": "#FFC72C", "lab": [80.1, 15.2, 85.3], "maxDeltaE": 2.0 },
+    { "name": "Parle-G Yellow", "pantone": "108 C", "hex": "#FEDB00", "lab": [85.4, -5.2, 80.1], "maxDeltaE": 2.5 },
+    { "name": "Tata Tea Green", "pantone": "356 C", "hex": "#007A3D", "lab": [42.1, -50.3, 30.2], "maxDeltaE": 2.8 },
+    { "name": "Dettol Green", "pantone": "348 C", "hex": "#00843D", "lab": [48.2, -55.1, 25.4], "maxDeltaE": 2.5 },
+    { "name": "Cipla Pharma Blue", "pantone": "293 C", "hex": "#0051BA", "lab": [35.4, 12.1, -60.2], "maxDeltaE": 2.0 },
+    { "name": "Pidilite Fevicol Blue", "pantone": "286 C", "hex": "#0033A0", "lab": [32.0, 18.0, -58.0], "maxDeltaE": 2.2 },
+    { "name": "Amul Butter Yellow", "pantone": "115 C", "hex": "#FBE122", "lab": [88.2, -2.1, 84.6], "maxDeltaE": 2.4 },
+    { "name": "Surf Excel Blue", "pantone": "2945 C", "hex": "#004C97", "lab": [31.5, 5.2, -50.8], "maxDeltaE": 2.2 },
+    { "name": "Dabur Red", "pantone": "485 C", "hex": "#DA291C", "lab": [47.5, 68.2, 54.1], "maxDeltaE": 2.3 },
+    { "name": "Castrol Green", "pantone": "355 C", "hex": "#009639", "lab": [52.1, -60.4, 38.2], "maxDeltaE": 2.6 }
+  ],
+  "companies": [
+    {
+      "id": "comp_hul",
+      "name": "Hindustan Unilever Limited",
+      "cin": "L15140MH1933PLC002030",
+      "gs1Prefix": "8901030",
+      "fssaiLicense": "10013022001897",
+      "sector": "FMCG & Consumer Care",
+      "address": "Unilever House, B. D. Sawant Marg, Chakala, Andheri (E), Mumbai - 400099, Maharashtra",
+      "customerCare": "1800-10-22-221 / lever.care@unilever.com",
+      "brands": [
+        "Surf Excel", "Dove", "Lux", "Lifebuoy", "Vim", "Rin", "Wheel",
+        "Pepsodent", "Close Up", "Pond's", "Vaseline", "Horlicks", "Boost",
+        "Knorr", "Red Label", "Brooke Bond", "Taj Mahal", "Bru", "Tresemme",
+        "Clinic Plus", "Sunsilk", "Glow & Lovely", "Lakme", "Kwality Wall's", "Domex"
+      ],
+      "spoofVariants": [
+        {"spoof": "Lifeboy", "target": "Lifebuoy", "type": "Vowel Deletion", "risk": "CRITICAL"},
+        {"spoof": "Likebuoy", "target": "Lifebuoy", "type": "Consonant Swap", "risk": "CRITICAL"},
+        {"spoof": "Surff Excel", "target": "Surf Excel", "type": "Character Duplication", "risk": "HIGH"},
+        {"spoof": "Dovve", "target": "Dove", "type": "Character Duplication", "risk": "HIGH"},
+        {"spoof": "Vim-Shine", "target": "Vim", "type": "Affix Pass-Off", "risk": "HIGH"},
+        {"spoof": "Horlics", "target": "Horlicks", "type": "Phonetic Deletion", "risk": "CRITICAL"},
+        {"spoof": "Bust", "target": "Boost", "type": "Phonetic Vowel Deletion", "risk": "HIGH"},
+        {"spoof": "Close-Up Red", "target": "Close Up", "type": "Suffix Piggybacking", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_mondelez",
+      "name": "Mondelez India Foods Private Limited",
+      "cin": "U15202MH1948PTC006352",
+      "gs1Prefix": "8901233",
+      "fssaiLicense": "10014022002711",
+      "sector": "Food & Confectionery",
+      "address": "Unit No. 2001, 20th Floor, Tower-3, Indiabulls Finance Centre, Parel, Mumbai - 400013, Maharashtra",
+      "customerCare": "1800-22-7080 / suggestions@mdlz.com",
+      "brands": [
+        "Cadbury", "Cadbury Dairy Milk", "Dairy Milk Silk", "Bournvita",
+        "5 Star", "Perk", "Gems", "Cadbury Fuse", "Oreo", "Cadbury Eclairs", "Tang", "Toblerone", "Bournville"
+      ],
+      "spoofVariants": [
+        {"spoof": "Cadbary", "target": "Cadbury", "type": "Vowel Substitution", "risk": "CRITICAL"},
+        {"spoof": "Cadbery", "target": "Cadbury", "type": "Vowel Substitution", "risk": "CRITICAL"},
+        {"spoof": "Cadbary Dairy Milk", "target": "Cadbury Dairy Milk", "type": "Compound Spoof", "risk": "CRITICAL"},
+        {"spoof": "Bornvita", "target": "Bournvita", "type": "Phonetic Deletion", "risk": "CRITICAL"},
+        {"spoof": "Bournvitaa", "target": "Bournvita", "type": "Vowel Duplication", "risk": "HIGH"},
+        {"spoof": "5 Start", "target": "5 Star", "type": "Character Insertion", "risk": "HIGH"},
+        {"spoof": "Peark", "target": "Perk", "type": "Vowel Insertion", "risk": "HIGH"},
+        {"spoof": "Orioo", "target": "Oreo", "type": "Phonetic Vowel Shift", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_parle",
+      "name": "Parle Products Private Limited",
+      "cin": "U15200MH1950PTC008064",
+      "gs1Prefix": "8901719",
+      "fssaiLicense": "10013022001417",
+      "sector": "Packaged Food & Biscuits",
+      "address": "North Level Crossing, Vile Parle East, Mumbai - 400057, Maharashtra",
+      "customerCare": "1800-22-1929 / cs@parle.biz",
+      "brands": [
+        "Parle", "Parle-G", "Monaco", "Krackjack", "Hide & Seek",
+        "20-20", "Milano", "Mango Bite", "Melody", "Kaccha Mango Bite", "Kismi", "Poppins", "Frooti", "Appy", "Top", "Fab", "Happy Happy"
+      ],
+      "spoofVariants": [
+        {"spoof": "Parley-G", "target": "Parle-G", "type": "Character Insertion", "risk": "CRITICAL"},
+        {"spoof": "Parle-J", "target": "Parle-G", "type": "Consonant Swap", "risk": "CRITICAL"},
+        {"spoof": "Parlee-G Biscuits", "target": "Parle-G", "type": "Typo Insertion", "risk": "CRITICAL"},
+        {"spoof": "Pari-G", "target": "Parle-G", "type": "Visual Pass-Off", "risk": "CRITICAL"},
+        {"spoof": "Prerna-G", "target": "Parle-G", "type": "Trade Dress Hijacking", "risk": "CRITICAL"},
+        {"spoof": "Monako", "target": "Monaco", "type": "Phonetic Substitution", "risk": "HIGH"},
+        {"spoof": "Crackjack", "target": "Krackjack", "type": "Phonetic Substitution", "risk": "HIGH"},
+        {"spoof": "Hide & Seekh", "target": "Hide & Seek", "type": "Letter Insertion", "risk": "HIGH"},
+        {"spoof": "Frooti Fresh", "target": "Frooti", "type": "Suffix Appending", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_britannia",
+      "name": "Britannia Industries Limited",
+      "cin": "L15412WB1918PLC002964",
+      "gs1Prefix": "8901063",
+      "fssaiLicense": "10015043001129",
+      "sector": "Packaged Food & Bakery",
+      "address": "5/1A, Hungerford Street, Kolkata - 700017, West Bengal",
+      "customerCare": "1800-425-4449 / feedback@britindia.com",
+      "brands": [
+        "Britannia", "Good Day", "Marie Gold", "50-50", "Milk Bikis",
+        "NutriChoice", "Treat", "Little Hearts", "Bourbon", "Jim Jam", "Pure Magic", "Winkies", "Time Pass", "Tiger", "Nice Time"
+      ],
+      "spoofVariants": [
+        {"spoof": "Britania", "target": "Britannia", "type": "Consonant Deletion", "risk": "CRITICAL"},
+        {"spoof": "Britaniia", "target": "Britannia", "type": "Character Duplication", "risk": "CRITICAL"},
+        {"spoof": "Good Dey", "target": "Good Day", "type": "Vowel Shift", "risk": "HIGH"},
+        {"spoof": "Marie Golden", "target": "Marie Gold", "type": "Affix Appending", "risk": "HIGH"},
+        {"spoof": "Milk Bikies", "target": "Milk Bikis", "type": "Character Insertion", "risk": "HIGH"},
+        {"spoof": "50-50 Maska", "target": "50-50", "type": "Trademark Piggybacking", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_amul",
+      "name": "Gujarat Cooperative Milk Marketing Federation Ltd. (Amul)",
+      "cin": "U15201GJ1973PLC002424",
+      "gs1Prefix": "8901262",
+      "fssaiLicense": "10012021000071",
+      "sector": "Dairy & Beverages",
+      "address": "Amul Dairy Road, Anand - 388001, Gujarat",
+      "customerCare": "1800-258-3333 / customercare@amul.coop",
+      "brands": [
+        "Amul", "Amul Butter", "Amul Milk", "Amul Gold", "Amul Taaza",
+        "Amulya", "Amul Cheese", "Amul Kool", "Amul Ice Cream", "Amul Masti", "Amul Ghee", "Amul Chocolates", "Amul Mithai Mate", "Amul Lassi", "Amul Pro"
+      ],
+      "spoofVariants": [
+        {"spoof": "Amull", "target": "Amul", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Anul", "target": "Amul", "type": "Homoglyph Swap (m->n)", "risk": "CRITICAL"},
+        {"spoof": "Omul", "target": "Amul", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Amul Pure", "target": "Amul", "type": "Suffix Appending", "risk": "HIGH"},
+        {"spoof": "Amulya Gold", "target": "Amulya", "type": "Compound Hijacking", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_tata_consumer",
+      "name": "Tata Consumer Products Limited",
+      "cin": "L15491WB1962PLC031426",
+      "gs1Prefix": "8901052",
+      "fssaiLicense": "10014031001025",
+      "sector": "Food & Beverages",
+      "address": "1, Bishop Lefroy Road, Kolkata - 700020, West Bengal",
+      "customerCare": "1800-345-1720 / care@tataconsumer.com",
+      "brands": [
+        "Tata Tea", "Tata Tea Premium", "Tata Tea Gold", "Tata Tea Agni",
+        "Tata Salt", "Tata Salt Lite", "Tetley", "Tata Sampann", "Tata Soulfull", "Himalayan", "Ching's Secret", "Smith & Jones", "Tata Coffee Grand"
+      ],
+      "spoofVariants": [
+        {"spoof": "Taata Tea", "target": "Tata Tea", "type": "Vowel Duplication", "risk": "CRITICAL"},
+        {"spoof": "Tataa Tea", "target": "Tata Tea", "type": "Vowel Duplication", "risk": "CRITICAL"},
+        {"spoof": "Taata Salt", "target": "Tata Salt", "type": "Vowel Duplication", "risk": "CRITICAL"},
+        {"spoof": "Tata Sel", "target": "Tata Salt", "type": "Phonetic Corruption", "risk": "HIGH"},
+        {"spoof": "Tata Gold Chai", "target": "Tata Tea Gold", "type": "Compound Mimicry", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_dabur",
+      "name": "Dabur India Limited",
+      "cin": "L24230DL1975PLC007908",
+      "gs1Prefix": "8901207",
+      "fssaiLicense": "10012011000618",
+      "sector": "Ayurveda & Consumer Care",
+      "address": "8/3, Asaf Ali Road, New Delhi - 110002, Delhi",
+      "customerCare": "1800-103-1644 / daburcares@dabur.com",
+      "brands": [
+        "Dabur", "Dabur Chyawanprash", "Dabur Honey", "Dabur Red", "Dabur Red Paste",
+        "Real", "Real Fruit Power", "Vatika", "Hajmola", "Pudin Hara", "Fem", "Odonil", "Odomos", "Dabur Amla", "Meswak", "Babool", "Dabur Gulabari", "Honitus"
+      ],
+      "spoofVariants": [
+        {"spoof": "Daboor", "target": "Dabur", "type": "Phonetic Duplication", "risk": "CRITICAL"},
+        {"spoof": "Daabur", "target": "Dabur", "type": "Vowel Duplication", "risk": "CRITICAL"},
+        {"spoof": "Hajmula", "target": "Hajmola", "type": "Vowel Shift", "risk": "HIGH"},
+        {"spoof": "Pudina Hara", "target": "Pudin Hara", "type": "Character Insertion", "risk": "HIGH"},
+        {"spoof": "Real Fresh", "target": "Real", "type": "Suffix Appending", "risk": "HIGH"},
+        {"spoof": "Odomoss", "target": "Odomos", "type": "Letter Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_bisleri",
+      "name": "Bisleri International Private Limited",
+      "cin": "U15543MH1969PTC014434",
+      "gs1Prefix": "8906017",
+      "fssaiLicense": "10014022002683",
+      "sector": "Packaged Drinking Water & Beverages",
+      "address": "Bisleri International Pvt Ltd, Western Express Highway, Andheri East, Mumbai - 400099, Maharashtra",
+      "customerCare": "1800-121-1007 / customercare@bisleri.co.in",
+      "brands": [
+        "Bisleri", "Bisleri Vedica", "Bisleri Limonata", "Bisleri Fonzo", "Bisleri Pop", "Bisleri Spyci"
+      ],
+      "spoofVariants": [
+        {"spoof": "Bilsari", "target": "Bisleri", "type": "Consonant Metathesis / Phonetic Mimicry", "risk": "CRITICAL"},
+        {"spoof": "Bilseri", "target": "Bisleri", "type": "Consonant Metathesis", "risk": "CRITICAL"},
+        {"spoof": "Brisleri", "target": "Bisleri", "type": "Consonant Insertion", "risk": "CRITICAL"},
+        {"spoof": "Bislari", "target": "Bisleri", "type": "Vowel Substitution", "risk": "CRITICAL"},
+        {"spoof": "Besleri", "target": "Bisleri", "type": "Vowel Substitution", "risk": "CRITICAL"},
+        {"spoof": "Bisleri Aqua", "target": "Bisleri", "type": "Suffix Appending", "risk": "HIGH"},
+        {"spoof": "Bislaari", "target": "Bisleri", "type": "Phonetic Duplication", "risk": "CRITICAL"},
+        {"spoof": "Bislerii", "target": "Bisleri", "type": "Character Duplication", "risk": "CRITICAL"},
+        {"spoof": "Bislri", "target": "Bisleri", "type": "Vowel Deletion", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_godrej",
+      "name": "Godrej Consumer Products Limited",
+      "cin": "L24246MH2000PLC129806",
+      "gs1Prefix": "8901023",
+      "fssaiLicense": "10012022000345",
+      "sector": "Personal Care & Household FMCG",
+      "address": "4th Floor, Godrej One, Pirojshanagar, Eastern Express Highway, Vikhroli (East), Mumbai - 400079, Maharashtra",
+      "customerCare": "1800-266-0007 / care@godrejcp.com",
+      "brands": [
+        "Park Avenue", "Goodknight", "HIT", "Cinthol", "Godrej No. 1", "Godrej Expert", "Aer", "Stella"
+      ],
+      "spoofVariants": [
+        {"spoof": "Park Avenu", "target": "Park Avenue", "type": "Vowel Deletion", "risk": "HIGH"},
+        {"spoof": "Park Avenve", "target": "Park Avenue", "type": "Homoglyph Substitution", "risk": "CRITICAL"},
+        {"spoof": "Goodnight", "target": "Goodknight", "type": "Consonant Deletion", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_idam",
+      "name": "IDAM Natural Wellness Private Limited",
+      "cin": "U24290HR2020PTC088231",
+      "gs1Prefix": "8906140",
+      "fssaiLicense": "10821005000412",
+      "sector": "Cosmetics & Luxury Fragrances",
+      "address": "417, Udyog Vihar Phase III, Gurugram - 122008, Haryana, India",
+      "customerCare": "+91-9311732440 / contact@bellavitaorganic.com",
+      "brands": [
+        "Bella Vita", "Bella Vita Luxury", "Bella Vita Organic", "Brave Essentials"
+      ],
+      "spoofVariants": [
+        {"spoof": "Bella Vitta", "target": "Bella Vita", "type": "Consonant Duplication", "risk": "HIGH"},
+        {"spoof": "Bela Vita", "target": "Bella Vita", "type": "Consonant Deletion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_marico",
+      "name": "Marico Limited",
+      "cin": "L15140MH1988PLC049208",
+      "gs1Prefix": "8901088",
+      "fssaiLicense": "10012022000258",
+      "sector": "Edible Oils & Personal Care",
+      "address": "7th Floor, Grande Palladium, 175, CST Road, Kalina, Santacruz (East), Mumbai - 400098, Maharashtra",
+      "customerCare": "1800-22-2248 / csc@marico.com",
+      "brands": [
+        "Parachute", "Parachute Advansed", "Saffola", "Saffola Gold",
+        "Saffola Active", "Nihar Naturals", "Set Wet", "Mediker", "Livon", "Coco Soul", "Beardo", "Saffola Oats"
+      ],
+      "spoofVariants": [
+        {"spoof": "Safola", "target": "Saffola", "type": "Consonant Deletion", "risk": "CRITICAL"},
+        {"spoof": "Saffolla", "target": "Saffola", "type": "Consonant Duplication", "risk": "HIGH"},
+        {"spoof": "Parachut", "target": "Parachute", "type": "Character Deletion", "risk": "HIGH"},
+        {"spoof": "Parashoot", "target": "Parachute", "type": "Phonetic Spelling", "risk": "CRITICAL"},
+        {"spoof": "Saffola Pure", "target": "Saffola", "type": "Suffix Pass-Off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_patanjali",
+      "name": "Patanjali Foods Limited / Patanjali Ayurved Ltd",
+      "cin": "L15141MH1986PLC039837",
+      "gs1Prefix": "8904109",
+      "fssaiLicense": "10014012000266",
+      "sector": "Ayurveda & Packaged Foods",
+      "address": "Patanjali Food & Herbal Park, Padartha, Haridwar - 249405, Uttarakhand",
+      "customerCare": "1800-180-4108 / feedback@patanjaliayurved.org",
+      "brands": [
+        "Patanjali", "Dant Kanti", "Kesh Kanti", "Patanjali Honey",
+        "Patanjali Cow Ghee", "Patanjali Chyawanprash", "Ruchi Soya", "Nutrela", "Patanjali Atta Noodles", "Patanjali Aloe Vera Gel", "Coronil"
+      ],
+      "spoofVariants": [
+        {"spoof": "Patanjlee", "target": "Patanjali", "type": "Phonetic Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Patanjli", "target": "Patanjali", "type": "Vowel Deletion", "risk": "CRITICAL"},
+        {"spoof": "Patangali", "target": "Patanjali", "type": "Consonant Swap", "risk": "CRITICAL"},
+        {"spoof": "Dant Kranti", "target": "Dant Kanti", "type": "Character Insertion", "risk": "HIGH"},
+        {"spoof": "Kesh Kranti", "target": "Kesh Kanti", "type": "Character Insertion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_itc",
+      "name": "ITC Limited",
+      "cin": "L16005WB1910PLC001981",
+      "gs1Prefix": "8901725",
+      "fssaiLicense": "10012031000312",
+      "sector": "FMCG & Foods",
+      "address": "Virginia House, 37, J. L. Nehru Road, Kolkata - 700071, West Bengal",
+      "customerCare": "1800-425-4444 / itccares@itc.in",
+      "brands": [
+        "Aashirvaad", "Sunfeast", "Bingo", "YiPPee!", "Classmate",
+        "Savlon", "Fiama", "Vivel", "Engage", "B Natural", "ITC Master Chef", "Dark Fantasy", "Mom's Magic", "Bounce", "Candyman"
+      ],
+      "spoofVariants": [
+        {"spoof": "Ashirwad", "target": "Aashirvaad", "type": "Vowel Deletion", "risk": "CRITICAL"},
+        {"spoof": "Sunfest", "target": "Sunfeast", "type": "Vowel Deletion", "risk": "CRITICAL"},
+        {"spoof": "Sunfeest", "target": "Sunfeast", "type": "Vowel Digraph Mimicry", "risk": "CRITICAL"},
+        {"spoof": "Yippe", "target": "YiPPee!", "type": "Punctuation/Vowel Drop", "risk": "HIGH"},
+        {"spoof": "Bingo!", "target": "Bingo", "type": "Punctuation Append", "risk": "HIGH"},
+        {"spoof": "Savlonn", "target": "Savlon", "type": "Consonant Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_nestle",
+      "name": "Nestle India Limited",
+      "cin": "L15202DL1959PLC003250",
+      "gs1Prefix": "8901058",
+      "fssaiLicense": "10012011000168",
+      "sector": "Packaged Food & Nutrition",
+      "address": "100/101, World Trade Centre, Barakhamba Lane, New Delhi - 110001, Delhi",
+      "customerCare": "1800-103-1947 / wecare@in.nestle.com",
+      "brands": [
+        "Nestle", "Maggi", "KitKat", "Nescafe", "Munch", "Milkmaid",
+        "Cerelac", "Everyday", "BarOne", "Milkybar", "Polo", "Nestea", "Maggi 2-Minute Noodles"
+      ],
+      "spoofVariants": [
+        {"spoof": "Magi", "target": "Maggi", "type": "Consonant Deletion", "risk": "CRITICAL"},
+        {"spoof": "Kit-Katt", "target": "KitKat", "type": "Punctuation & Duplication", "risk": "CRITICAL"},
+        {"spoof": "Nescafee", "target": "Nescafe", "type": "Vowel Duplication", "risk": "HIGH"},
+        {"spoof": "Munchh", "target": "Munch", "type": "Letter Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_cipla",
+      "name": "Cipla Limited",
+      "cin": "L24239MH1935PLC002380",
+      "gs1Prefix": "8901117",
+      "fssaiLicense": "NA (CDSCO/State FDA Drug License)",
+      "sector": "Pharmaceuticals",
+      "address": "Cipla House, Peninsula Business Park, Ganpatrao Kadam Marg, Lower Parel, Mumbai - 400013, Maharashtra",
+      "customerCare": "1800-22-0408 / contactus@cipla.com",
+      "brands": [
+        "Cipla", "Ciplox", "Asthalin", "Foracort", "Nicotex",
+        "Omnigel", "D-Rise", "Budecort", "Duolin", "Montair", "Cofsils", "Prolyte", "Maxirich"
+      ],
+      "spoofVariants": [
+        {"spoof": "Cippla", "target": "Cipla", "type": "Consonant Duplication", "risk": "CRITICAL"},
+        {"spoof": "Ciplaah", "target": "Cipla", "type": "Phonetic Suffix", "risk": "CRITICAL"},
+        {"spoof": "Ciplox-Forte", "target": "Ciplox", "type": "Unlicensed Suffix", "risk": "CRITICAL"},
+        {"spoof": "Asthalene", "target": "Asthalin", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Foracort Plus", "target": "Foracort", "type": "Affix Pass-off", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_sun_pharma",
+      "name": "Sun Pharmaceutical Industries Limited",
+      "cin": "L24230GJ1993PLC019050",
+      "gs1Prefix": "8901202",
+      "fssaiLicense": "NA (CDSCO/State FDA Drug License)",
+      "sector": "Pharmaceuticals",
+      "address": "Sun House, Plot No. 201 B/1, Western Express Highway, Goregaon (E), Mumbai - 400063, Maharashtra",
+      "customerCare": "1800-266-7080 / secretarial@sunpharma.com",
+      "brands": [
+        "Sun Pharma", "Revital", "Revital H", "Volini", "Pantocid",
+        "Storvas", "Rosuvas", "Gemer", "Susten", "Sompraz", "Fumafer", "Rozavel"
+      ],
+      "spoofVariants": [
+        {"spoof": "Revitol", "target": "Revital", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Volini Plus", "target": "Volini", "type": "Unauthorized Suffix", "risk": "CRITICAL"},
+        {"spoof": "Pantocid-DSR Fake", "target": "Pantocid", "type": "Counterfeit Formulation", "risk": "CRITICAL"},
+        {"spoof": "Storvas-EZ", "target": "Storvas", "type": "Affix Pass-off", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_pidilite",
+      "name": "Pidilite Industries Limited",
+      "cin": "L24100MH1969PLC014336",
+      "gs1Prefix": "8901860",
+      "fssaiLicense": "NA (Chemical & Adhesives)",
+      "sector": "Adhesives & Sealants",
+      "address": "Regent Chambers, 7th Floor, Jamnalal Bajaj Marg, Nariman Point, Mumbai - 400021, Maharashtra",
+      "customerCare": "1800-266-6060 / csc@pidilite.com",
+      "brands": [
+        "Fevicol", "Fevicol SH", "Fevikwik", "M-Seal", "Dr. Fixit",
+        "Fevicryl", "Steelgrip", "Roff", "Fevigum", "WD-40"
+      ],
+      "spoofVariants": [
+        {"spoof": "Fevicoal", "target": "Fevicol", "type": "Vowel Insertion", "risk": "CRITICAL"},
+        {"spoof": "Phavicol", "target": "Fevicol", "type": "Phonetic Pass-Off", "risk": "CRITICAL"},
+        {"spoof": "Feviquick", "target": "Fevikwik", "type": "Orthographic Replacement", "risk": "HIGH"},
+        {"spoof": "M-Sealant", "target": "M-Seal", "type": "Suffix Appending", "risk": "HIGH"},
+        {"spoof": "Dr. Fixitt", "target": "Dr. Fixit", "type": "Letter Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_castrol",
+      "name": "Castrol India Limited",
+      "cin": "L23200MH1979PLC026540",
+      "gs1Prefix": "8901416",
+      "fssaiLicense": "NA (Automotive Lubricants & Petroleum)",
+      "sector": "Automotive Lubricants & Oils",
+      "address": "Technopolis Knowledge Park, Mahakali Caves Road, Chakala, Andheri (East), Mumbai - 400093, Maharashtra",
+      "customerCare": "1800-222-100 / customercare.india@castrol.com",
+      "brands": [
+        "Castrol", "Castrol GTX", "Castrol Activ", "Castrol CRB",
+        "Castrol CRB Turbomax", "Castrol MAGNATEC", "Castrol EDGE", "Castrol Power1"
+      ],
+      "spoofVariants": [
+        {"spoof": "Castrol GRB", "target": "Castrol CRB", "type": "Consonant Swap", "risk": "CRITICAL"},
+        {"spoof": "Castroil", "target": "Castrol", "type": "Vowel Insertion", "risk": "CRITICAL"},
+        {"spoof": "Castrol Active", "target": "Castrol Activ", "type": "Vowel Insertion", "risk": "HIGH"},
+        {"spoof": "Castrol GTXX", "target": "Castrol GTX", "type": "Letter Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_havells",
+      "name": "Havells India Limited",
+      "cin": "L31900DL1983PLC016304",
+      "gs1Prefix": "8901736",
+      "fssaiLicense": "NA (BIS / Electrical Safety IS 694)",
+      "sector": "Electrical Equipment & Cables",
+      "address": "904, Surya Kiran Building, K. G. Marg, Connaught Place, New Delhi - 110001, Delhi",
+      "customerCare": "1800-103-1313 / customercare@havells.com",
+      "brands": [
+        "Havells", "Crabtree", "Standard", "Lloyd", "Havells LifeLine", "Havells Fabio", "Reo"
+      ],
+      "spoofVariants": [
+        {"spoof": "Havels", "target": "Havells", "type": "Consonant Deletion", "risk": "CRITICAL"},
+        {"spoof": "Havell's", "target": "Havells", "type": "Punctuation Insertion", "risk": "HIGH"},
+        {"spoof": "Hevells", "target": "Havells", "type": "Vowel Substitution", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_upl",
+      "name": "UPL Limited",
+      "cin": "L24219GJ1969PLC001588",
+      "gs1Prefix": "8901358",
+      "fssaiLicense": "NA (CIBRC / Agrochemicals)",
+      "sector": "Agrochemicals & Crop Protection",
+      "address": "3-11, G.I.D.C., Vapi, Valsad - 396195, Gujarat",
+      "customerCare": "1800-102-1875 / upl.care@upl-ltd.com",
+      "brands": [
+        "UPL", "Saaf", "Phoskill", "Ulala", "Sweep Power", "Unizeb", "Lancer Gold", "Disect"
+      ],
+      "spoofVariants": [
+        {"spoof": "Saaff", "target": "Saaf", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Foskill", "target": "Phoskill", "type": "Phonetic Substitution", "risk": "CRITICAL"},
+        {"spoof": "Ulalla", "target": "Ulala", "type": "Consonant Duplication", "risk": "HIGH"},
+        {"spoof": "Lancergold", "target": "Lancer Gold", "type": "Space Deletion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_godrej",
+      "name": "Godrej Consumer Products Limited",
+      "cin": "L51100MH2000PLC129808",
+      "gs1Prefix": "8901023",
+      "fssaiLicense": "10013022001524",
+      "sector": "FMCG & Personal Care",
+      "address": "Godrej One, 4th Floor, Pirojshanagar, Eastern Express Highway, Vikhroli (East), Mumbai - 400079, Maharashtra",
+      "customerCare": "1800-266-0007 / care@godrejcp.com",
+      "brands": [
+        "Godrej", "Godrej No. 1", "Goodknight", "HIT", "Cinthol", "Godrej Expert", "Aer", "BBLUNT", "Ezee", "Protekt"
+      ],
+      "spoofVariants": [
+        {"spoof": "Goodnight", "target": "Goodknight", "type": "Phonetic Substitution", "risk": "CRITICAL"},
+        {"spoof": "Sinthal", "target": "Cinthol", "type": "Phonetic Pass-Off", "risk": "CRITICAL"},
+        {"spoof": "Godrej No 2", "target": "Godrej No. 1", "type": "Numeral Shift", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_haldiram",
+      "name": "Haldiram Snacks Private Limited",
+      "cin": "U74899DL1995PTC074092",
+      "gs1Prefix": "8904063",
+      "fssaiLicense": "10012011000676",
+      "sector": "Packaged Sweets & Snacks",
+      "address": "B-1/H-8, Mohan Co-operative Industrial Estate, Mathura Road, New Delhi - 110044, Delhi",
+      "customerCare": "1800-102-7777 / customercare@haldirams.com",
+      "brands": [
+        "Haldiram's", "Haldiram", "Bhujia Sev", "All in One", "Minute Khana", "Gulab Jamun", "Soan Papdi", "Khatta Meetha", "Panchratan", "Nut Cracker"
+      ],
+      "spoofVariants": [
+        {"spoof": "Haldirams Bhujia", "target": "Haldiram's", "type": "Punctuation Omission", "risk": "HIGH"},
+        {"spoof": "Haldiraam", "target": "Haldiram", "type": "Vowel Duplication", "risk": "CRITICAL"},
+        {"spoof": "Halderam", "target": "Haldiram", "type": "Vowel Substitution", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_emami",
+      "name": "Emami Limited",
+      "cin": "L20101WB1973PLC028707",
+      "gs1Prefix": "8901248",
+      "fssaiLicense": "10012031000109",
+      "sector": "Personal Care & Ayurveda",
+      "address": "Emami Tower, 687 Anandapur, E. M. Bypass, Kolkata - 700107, West Bengal",
+      "customerCare": "1800-103-6264 / contact@emamigroup.com",
+      "brands": [
+        "BoroPlus", "Navratna", "Zandu", "Zandu Balm", "Fair and Handsome", "Kesh King", "Mentho Plus", "Dermicool", "Fast Relief"
+      ],
+      "spoofVariants": [
+        {"spoof": "Boro Plus", "target": "BoroPlus", "type": "Space Insertion", "risk": "HIGH"},
+        {"spoof": "Navratan Oil", "target": "Navratna", "type": "Phonetic Pass-Off", "risk": "CRITICAL"},
+        {"spoof": "Zandoo Balm", "target": "Zandu Balm", "type": "Phonetic Duplication", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_bajaj_consumer",
+      "name": "Bajaj Consumer Care Limited",
+      "cin": "L01110RJ2006PLC047173",
+      "gs1Prefix": "8906014",
+      "fssaiLicense": "10016013001155",
+      "sector": "Hair Care & Personal Care",
+      "address": "Old Station Road, Sevashram Chouraha, Udaipur - 313001, Rajasthan",
+      "customerCare": "1800-22-2626 / consumer@bajajconsumer.com",
+      "brands": [
+        "Bajaj Almond Drops", "Bajaj Nomarks", "Bajaj Brahmi Amla", "Bajaj Coco Jasmine", "Bajaj Amla"
+      ],
+      "spoofVariants": [
+        {"spoof": "Bajaj Almond Drop", "target": "Bajaj Almond Drops", "type": "Plural Omission", "risk": "HIGH"},
+        {"spoof": "Bajaaj Almond", "target": "Bajaj Almond Drops", "type": "Vowel Duplication", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_titan",
+      "name": "Titan Company Limited",
+      "cin": "L74999TZ1984PLC014561",
+      "gs1Prefix": "8904005",
+      "fssaiLicense": "NA (Watches & Lifestyle)",
+      "sector": "Watches & Jewelry",
+      "address": "3, SIPCOT Industrial Complex, Hosur - 635126, Tamil Nadu",
+      "customerCare": "1800-266-0123 / customercare@titan.co.in",
+      "brands": [
+        "Titan", "Fastrack", "Sonata", "Tanishq", "Skinn", "Raga", "Mia", "CaratLane"
+      ],
+      "spoofVariants": [
+        {"spoof": "Titann", "target": "Titan", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Fastrak", "target": "Fastrack", "type": "Letter Deletion", "risk": "CRITICAL"},
+        {"spoof": "Sonatta", "target": "Sonata", "type": "Letter Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_asian_paints",
+      "name": "Asian Paints Limited",
+      "cin": "L24220MH1945PLC004598",
+      "gs1Prefix": "8901304",
+      "fssaiLicense": "NA (Chemical Coatings)",
+      "sector": "Paints & Home Decor",
+      "address": "6A, Shantinagar, Santacruz (East), Mumbai - 400055, Maharashtra",
+      "customerCare": "1800-209-5678 / customercare@asianpaints.com",
+      "brands": [
+        "Asian Paints", "Royale", "Apcolite", "Tractor Emulsion", "Apex", "Apex Ultima", "TruCare", "SmartCare"
+      ],
+      "spoofVariants": [
+        {"spoof": "Asian Paint", "target": "Asian Paints", "type": "Singular Drop", "risk": "HIGH"},
+        {"spoof": "Royal Luxury Emulsion", "target": "Royale", "type": "Affix Pass-Off", "risk": "HIGH"},
+        {"spoof": "Apex Ultimaa", "target": "Apex Ultima", "type": "Letter Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_berger_paints",
+      "name": "Berger Paints India Limited",
+      "cin": "L51434WB1923PLC004793",
+      "gs1Prefix": "8901258",
+      "fssaiLicense": "NA (Chemical Coatings)",
+      "sector": "Paints & Coatings",
+      "address": "Berger House, 129 Park Street, Kolkata - 700017, West Bengal",
+      "customerCare": "1800-103-6030 / consumerfeedback@bergerindia.com",
+      "brands": [
+        "Berger", "Silk", "Easy Clean", "Bison", "WeatherCoat", "Walmasta", "Breathe Easy", "Luxol"
+      ],
+      "spoofVariants": [
+        {"spoof": "Burger Paints", "target": "Berger", "type": "Phonetic Corruption", "risk": "CRITICAL"},
+        {"spoof": "Weather Coat", "target": "WeatherCoat", "type": "Space Insertion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_mother_dairy",
+      "name": "Mother Dairy Fruit & Vegetable Pvt Ltd",
+      "cin": "U74899DL1974GOI007349",
+      "gs1Prefix": "8901648",
+      "fssaiLicense": "10014011001895",
+      "sector": "Dairy & Edible Oils",
+      "address": "Mother Dairy, Patparganj, Delhi - 110092, Delhi",
+      "customerCare": "1800-180-1018 / consumer.services@motherdairy.com",
+      "brands": [
+        "Mother Dairy", "Safal", "Dhara", "Dailycious", "Dietz", "Chillz"
+      ],
+      "spoofVariants": [
+        {"spoof": "Mothers Dairy", "target": "Mother Dairy", "type": "Character Insertion", "risk": "CRITICAL"},
+        {"spoof": "Dhara Pure", "target": "Dhara", "type": "Suffix Piggybacking", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_wipro",
+      "name": "Wipro Consumer Care and Lighting",
+      "cin": "U24233KA1945PLC020800",
+      "gs1Prefix": "8901399",
+      "fssaiLicense": "10012043000045",
+      "sector": "Personal Care & Lighting",
+      "address": "Doddakannelli, Sarjapur Road, Bengaluru - 560035, Karnataka",
+      "customerCare": "1800-425-1969 / feedback.wcc@wipro.com",
+      "brands": [
+        "Santoor", "Chandrika", "Yardley", "Glucovita", "Safewash", "Wipro Garnet", "Enchanteur"
+      ],
+      "spoofVariants": [
+        {"spoof": "Santor", "target": "Santoor", "type": "Vowel Deletion", "risk": "CRITICAL"},
+        {"spoof": "Santoor Sandal", "target": "Santoor", "type": "Affix Pass-off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_colgate",
+      "name": "Colgate-Palmolive (India) Limited",
+      "cin": "L24202MH1937PLC002700",
+      "gs1Prefix": "8901314",
+      "fssaiLicense": "10013022002011",
+      "sector": "Oral Care & Personal Care",
+      "address": "Colgate Research Centre, Main Street, Hiranandani Gardens, Powai, Mumbai - 400076, Maharashtra",
+      "customerCare": "1800-225-599 / consumeraffairs_india@colpal.com",
+      "brands": [
+        "Colgate", "Colgate Strong Teeth", "Colgate MaxFresh", "Colgate Total", "Colgate Visible White", "Colgate Vedshakti", "Palmolive", "Protex"
+      ],
+      "spoofVariants": [
+        {"spoof": "Colegate", "target": "Colgate", "type": "Vowel Insertion", "risk": "CRITICAL"},
+        {"spoof": "Colgat", "target": "Colgate", "type": "Letter Deletion", "risk": "CRITICAL"},
+        {"spoof": "Colgate Max Fresh", "target": "Colgate MaxFresh", "type": "Space Insertion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_pg",
+      "name": "Procter & Gamble Hygiene and Health Care Ltd",
+      "cin": "L24239MH1964PLC012971",
+      "gs1Prefix": "8901039",
+      "fssaiLicense": "10012022000145",
+      "sector": "FMCG & Hygiene",
+      "address": "P&G Plaza, Cardinal Gracias Road, Chakala, Andheri (E), Mumbai - 400099, Maharashtra",
+      "customerCare": "1800-202-1364 / pgconsumers@pg.com",
+      "brands": [
+        "P&G", "Ariel", "Tide", "Whisper", "Gillette", "Head & Shoulders", "Pantene", "Oral-B", "Olay", "Vicks", "Pampers", "Ambipur"
+      ],
+      "spoofVariants": [
+        {"spoof": "Airiel", "target": "Ariel", "type": "Vowel Insertion", "risk": "CRITICAL"},
+        {"spoof": "Tyde", "target": "Tide", "type": "Phonetic Substitution", "risk": "CRITICAL"},
+        {"spoof": "Gillete", "target": "Gillette", "type": "Consonant Deletion", "risk": "CRITICAL"},
+        {"spoof": "Vix Vaporub", "target": "Vicks", "type": "Phonetic Corruption", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_reckitt",
+      "name": "Reckitt Benckiser (India) Pvt Ltd",
+      "cin": "U24299DL1951PTC001907",
+      "gs1Prefix": "8901396",
+      "fssaiLicense": "10013011001358",
+      "sector": "Home & Health Care",
+      "address": "DLF Cyber Park, 6th & 7th Floor, Tower C, 405 B, Udyog Vihar Phase III, Sector 20, Gurugram - 122016, Haryana",
+      "customerCare": "1800-102-2777 / consumer.india@reckitt.com",
+      "brands": [
+        "Dettol", "Harpic", "Lizol", "Colin", "Mortein", "Veet", "Strepsils", "Durex", "Moov", "Krack", "Cherry Blossom", "Disprin", "Itch Guard", "Ring Guard"
+      ],
+      "spoofVariants": [
+        {"spoof": "Detol", "target": "Dettol", "type": "Consonant Deletion", "risk": "CRITICAL"},
+        {"spoof": "Dettoll", "target": "Dettol", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Harpeek", "target": "Harpic", "type": "Phonetic Substitution", "risk": "CRITICAL"},
+        {"spoof": "Lyzoil", "target": "Lizol", "type": "Vowel Insertion", "risk": "HIGH"},
+        {"spoof": "Mooov", "target": "Moov", "type": "Vowel Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_gsk",
+      "name": "GlaxoSmithKline Pharmaceuticals Ltd",
+      "cin": "L24239MH1924PLC001151",
+      "gs1Prefix": "8901076",
+      "fssaiLicense": "NA (Pharma)",
+      "sector": "Pharmaceuticals",
+      "address": "Dr. Annie Besant Road, Worli, Mumbai - 400030, Maharashtra",
+      "customerCare": "1800-22-2203 / askus@gsk.com",
+      "brands": [
+        "GSK", "Augmentin", "Calpol", "Ceftum", "Betnovate", "T-Bact", "Zentel", "Neosporin", "Tenovate"
+      ],
+      "spoofVariants": [
+        {"spoof": "Calpal", "target": "Calpol", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Augmenten", "target": "Augmentin", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Betnovet", "target": "Betnovate", "type": "Phonetic Corruption", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_dr_reddy",
+      "name": "Dr. Reddy's Laboratories Ltd",
+      "cin": "L85195TG1984PLC004507",
+      "gs1Prefix": "8901148",
+      "fssaiLicense": "NA (Pharma)",
+      "sector": "Pharmaceuticals",
+      "address": "8-2-337, Road No. 3, Banjara Hills, Hyderabad - 500034, Telangana",
+      "customerCare": "1800-425-0014 / queries@drreddys.com",
+      "brands": [
+        "Dr. Reddy's", "Omez", "Nise", "Econorm", "Ketorol", "Stamlo", "Razo", "Mintop", "Rebalanz", "Clamp"
+      ],
+      "spoofVariants": [
+        {"spoof": "Omezz", "target": "Omez", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Nize", "target": "Nise", "type": "Homophone Swap", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_lupin",
+      "name": "Lupin Limited",
+      "cin": "L24100MH1983PLC029442",
+      "gs1Prefix": "8901633",
+      "fssaiLicense": "NA (Pharma)",
+      "sector": "Pharmaceuticals",
+      "address": "Kalpataru Inspire, 3rd Floor, Off Western Express Highway, Santacruz (East), Mumbai - 400055, Maharashtra",
+      "customerCare": "1800-209-2323 / contactus@lupin.com",
+      "brands": [
+        "Lupin", "Lupisulin", "Gibtulio", "Ivabrad", "Tonact", "Rablet", "Gluconorm", "Novastat", "Telista"
+      ],
+      "spoofVariants": [
+        {"spoof": "Lupinn", "target": "Lupin", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Tonact-F Fake", "target": "Tonact", "type": "Suffix Pass-off", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_mankind",
+      "name": "Mankind Pharma Limited",
+      "cin": "L24230DL1991PLC044814",
+      "gs1Prefix": "8904103",
+      "fssaiLicense": "10013011001124",
+      "sector": "Pharmaceuticals & Consumer Healthcare",
+      "address": "208, Okhla Industrial Estate, Phase-III, New Delhi - 110020, Delhi",
+      "customerCare": "1800-103-4400 / contact@mankindpharma.com",
+      "brands": [
+        "Mankind", "Manforce", "Prega News", "Gas-O-Fast", "Unwanted-72", "HealthOK", "AcneStar", "Ring-Out", "Moxikind", "Gudcef", "Candiforce"
+      ],
+      "spoofVariants": [
+        {"spoof": "Mankinde", "target": "Mankind", "type": "Letter Insertion", "risk": "CRITICAL"},
+        {"spoof": "Prega-Newz", "target": "Prega News", "type": "Phonetic Corruption", "risk": "CRITICAL"},
+        {"spoof": "Gas-Fast", "target": "Gas-O-Fast", "type": "Letter Deletion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_torrent",
+      "name": "Torrent Pharmaceuticals Limited",
+      "cin": "L24230GJ1972PLC002126",
+      "gs1Prefix": "8901198",
+      "fssaiLicense": "NA (Pharma)",
+      "sector": "Pharmaceuticals",
+      "address": "Torrent House, Off Ashram Road, Ahmedabad - 380009, Gujarat",
+      "customerCare": "1800-258-5252 / compliance@torrentpharma.com",
+      "brands": [
+        "Torrent", "Shelcal", "Chymoral Forte", "Losar", "Nebicard", "Azulix", "Nexpro", "Ampoxin", "Unienzyme"
+      ],
+      "spoofVariants": [
+        {"spoof": "Shelcal-500 Fake", "target": "Shelcal", "type": "Unlicensed Suffix", "risk": "CRITICAL"},
+        {"spoof": "Torent", "target": "Torrent", "type": "Consonant Deletion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_zydus",
+      "name": "Zydus Lifesciences Limited",
+      "cin": "L24230GJ1995PLC025878",
+      "gs1Prefix": "8901235",
+      "fssaiLicense": "10012021000188",
+      "sector": "Pharmaceuticals & Wellness",
+      "address": "Zydus Corporate Park, Scheme No. 63, Survey No. 536, Khoraj, Gandhinagar - 382481, Gujarat",
+      "customerCare": "1800-233-3535 / contact@zyduslife.com",
+      "brands": [
+        "Zydus", "Sugar Free", "Nutralite", "Everyuth", "Glucon-D", "Derma Care", "Lipaglyn", "Atorva"
+      ],
+      "spoofVariants": [
+        {"spoof": "Glukon-D", "target": "Glucon-D", "type": "Consonant Swap", "risk": "CRITICAL"},
+        {"spoof": "Sugar-Free Gold Fake", "target": "Sugar Free", "type": "Pass-off Suffix", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_alkem",
+      "name": "Alkem Laboratories Limited",
+      "cin": "L00305MH1973PLC174201",
+      "gs1Prefix": "8901083",
+      "fssaiLicense": "NA (Pharma)",
+      "sector": "Pharmaceuticals",
+      "address": "Alkem House, Senapati Bapat Marg, Lower Parel, Mumbai - 400013, Maharashtra",
+      "customerCare": "1800-22-9988 / contactus@alkem.com",
+      "brands": [
+        "Alkem", "Clavam", "Pan", "Pan-D", "Azee", "Gemcal", "Taxim-O", "Ondem", "Sumo"
+      ],
+      "spoofVariants": [
+        {"spoof": "Clavam-625 Fake", "target": "Clavam", "type": "Dosage Piggybacking", "risk": "CRITICAL"},
+        {"spoof": "Pan-DSR Fake", "target": "Pan-D", "type": "Counterfeit Suffix", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_abbott",
+      "name": "Abbott India Limited",
+      "cin": "L24239MH1944PLC007330",
+      "gs1Prefix": "8901043",
+      "fssaiLicense": "10012022000526",
+      "sector": "Nutrition & Pharmaceuticals",
+      "address": "3, Corporate Park, Sion-Trombay Road, Mumbai - 400071, Maharashtra",
+      "customerCare": "1800-22-2288 / abbott.india@abbott.com",
+      "brands": [
+        "Abbott", "Digene", "Ensure", "Glucerna", "Similac", "Pediasure", "Thyronorm", "Duphaston", "Cremaffin", "Ganaton"
+      ],
+      "spoofVariants": [
+        {"spoof": "Dygene", "target": "Digene", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Ensuer", "target": "Ensure", "type": "Vowel Swap", "risk": "CRITICAL"},
+        {"spoof": "Pedia-Sure", "target": "Pediasure", "type": "Hyphen Insertion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_pepsico",
+      "name": "PepsiCo India Holdings Pvt Ltd",
+      "cin": "U15549HR1989PTC032412",
+      "gs1Prefix": "8901491",
+      "fssaiLicense": "10012064000100",
+      "sector": "Beverages & Snacks",
+      "address": "Level 3-6, Pioneer Square, Sector 62, Near Golf Course Extension Road, Gurugram - 122101, Haryana",
+      "customerCare": "1800-22-4020 / feedback@pepsico.com",
+      "brands": [
+        "Pepsi", "7UP", "Mirinda", "Mountain Dew", "Slice", "Tropicana", "Lay's", "Lays", "Kurkure", "Doritos", "Quaker", "Aquafina", "Sting", "Uncle Chipps"
+      ],
+      "spoofVariants": [
+        {"spoof": "Layss", "target": "Lays", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Layss Classic", "target": "Lays", "type": "Compound Typo", "risk": "CRITICAL"},
+        {"spoof": "Kur-Kure", "target": "Kurkure", "type": "Hyphen Insertion", "risk": "HIGH"},
+        {"spoof": "Pepsee", "target": "Pepsi", "type": "Phonetic Spelling", "risk": "CRITICAL"},
+        {"spoof": "Doritoz", "target": "Doritos", "type": "Letter Swap", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_coca_cola",
+      "name": "Coca-Cola India Pvt Ltd",
+      "cin": "U74899DL1992PTC047320",
+      "gs1Prefix": "8901764",
+      "fssaiLicense": "10012011000420",
+      "sector": "Beverages",
+      "address": "Enkay Towers, Udyog Vihar Phase V, Gurugram - 122016, Haryana",
+      "customerCare": "1800-208-2653 / indiahelpline@coca-cola.com",
+      "brands": [
+        "Coca-Cola", "Thums Up", "Sprite", "Fanta", "Limca", "Maaza", "Minute Maid", "Kinley", "Schweppes", "Charged"
+      ],
+      "spoofVariants": [
+        {"spoof": "Thumbs Up", "target": "Thums Up", "type": "Character Insertion (b)", "risk": "CRITICAL"},
+        {"spoof": "Thumb Up", "target": "Thums Up", "type": "Phonetic Corruption", "risk": "CRITICAL"},
+        {"spoof": "Maaza Fresh", "target": "Maaza", "type": "Suffix Appending", "risk": "HIGH"},
+        {"spoof": "Spryte", "target": "Sprite", "type": "Vowel Shift", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_perfetti",
+      "name": "Perfetti Van Melle India Pvt Ltd",
+      "cin": "U24299HR1992PTC031809",
+      "gs1Prefix": "8901393",
+      "fssaiLicense": "10012064000155",
+      "sector": "Confectionery & Gums",
+      "address": "1st Floor, Tower A, Global Business Park, M. G. Road, Gurugram - 122002, Haryana",
+      "customerCare": "1800-419-0010 / consumercare@in.pvmgrp.com",
+      "brands": [
+        "Center Fresh", "Center Fruit", "Alpenliebe", "Mentos", "Happydent", "Chupa Chups", "Big Babol", "Chlor-Mint"
+      ],
+      "spoofVariants": [
+        {"spoof": "Centre Fresh", "target": "Center Fresh", "type": "Spelling Shift", "risk": "HIGH"},
+        {"spoof": "Alpenlybe", "target": "Alpenliebe", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Happy-Dent", "target": "Happydent", "type": "Hyphen Insertion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_hector",
+      "name": "Hector Beverages Pvt Ltd",
+      "cin": "U15549KA2009PTC051188",
+      "gs1Prefix": "8906048",
+      "fssaiLicense": "10012043000078",
+      "sector": "Traditional Beverages & Foods",
+      "address": "Plot No. 1322, 1st Floor, 24th Main, HSR Layout, Sector 2, Bengaluru - 560102, Karnataka",
+      "customerCare": "1860-425-4425 / paperboat@hectorbeverages.com",
+      "brands": [
+        "Paper Boat", "Paper Boat Swing", "Paper Boat Chikki", "Hector", "Paper Boat Aamras", "Paper Boat Jaljeera"
+      ],
+      "spoofVariants": [
+        {"spoof": "Paperboat", "target": "Paper Boat", "type": "Space Deletion", "risk": "HIGH"},
+        {"spoof": "Paper Boot", "target": "Paper Boat", "type": "Vowel Shift", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_bikaji",
+      "name": "Bikaji Foods International Limited",
+      "cin": "L15499RJ1995PLC010856",
+      "gs1Prefix": "8906004",
+      "fssaiLicense": "10012013000346",
+      "sector": "Packaged Snacks & Sweets",
+      "address": "F-196-199, Bichhwal Industrial Area, Bikaner - 334006, Rajasthan",
+      "customerCare": "1800-120-1995 / customercare@bikaji.com",
+      "brands": [
+        "Bikaji", "Bhujia", "Tana Tan", "Sub-Kuch", "Bikaneri Bhujia", "Kuch-Kuch", "Bikaji Rasgulla"
+      ],
+      "spoofVariants": [
+        {"spoof": "Bikaaji", "target": "Bikaji", "type": "Vowel Duplication", "risk": "CRITICAL"},
+        {"spoof": "Bikaji Sub Kuch", "target": "Sub-Kuch", "type": "Hyphen Omission", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_balaji",
+      "name": "Balaji Wafers Private Limited",
+      "cin": "U15400GJ1995PTC027420",
+      "gs1Prefix": "8906010",
+      "fssaiLicense": "10012021000295",
+      "sector": "Packaged Wafers & Namkeen",
+      "address": "Vajdi (Vad), Kalawad Road, Ta. Lodhika, Rajkot - 360021, Gujarat",
+      "customerCare": "1800-233-0101 / customercare@balajiwafers.com",
+      "brands": [
+        "Balaji", "Balaji Wafers", "Rumbles", "Cruncheex", "Stack Up", "Balaji Sev Murmura"
+      ],
+      "spoofVariants": [
+        {"spoof": "Balajee Wafers", "target": "Balaji Wafers", "type": "Phonetic Duplication", "risk": "CRITICAL"},
+        {"spoof": "Balaji Crunch", "target": "Balaji", "type": "Suffix Pass-off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_bikano",
+      "name": "Bikanervala Foods Private Limited",
+      "cin": "U74899DL1988PTC030588",
+      "gs1Prefix": "8906009",
+      "fssaiLicense": "10012011000142",
+      "sector": "Traditional Sweets & Snacks",
+      "address": "A-28, Lawrence Road Industrial Area, New Delhi - 110035, Delhi",
+      "customerCare": "1800-102-8989 / customercare@bikano.com",
+      "brands": [
+        "Bikano", "Bikanervala", "Aloo Bhujia", "Rasgulla", "Gulab Jamun", "Bikano Navratan"
+      ],
+      "spoofVariants": [
+        {"spoof": "Bikanno", "target": "Bikano", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Bikanerwala", "target": "Bikanervala", "type": "Consonant Swap (v->w)", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_everest",
+      "name": "Everest Food Products Private Limited",
+      "cin": "U15495MH1996PTC100235",
+      "gs1Prefix": "8901786",
+      "fssaiLicense": "10012022000508",
+      "sector": "Spices & Seasonings",
+      "address": "Everest House, 107/108, S. V. Road, Goregaon (West), Mumbai - 400062, Maharashtra",
+      "customerCare": "1800-22-7799 / customercare@everestspices.com",
+      "brands": [
+        "Everest", "Everest Spices", "Everest Garam Masala", "Everest Chaat Masala", "Everest Pav Bhaji Masala", "Everest Tikhalal", "Everest Sambhar Masala"
+      ],
+      "spoofVariants": [
+        {"spoof": "Everst Spices", "target": "Everest", "type": "Vowel Deletion", "risk": "CRITICAL"},
+        {"spoof": "Everest Masale", "target": "Everest", "type": "Suffix Pass-off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_mdh",
+      "name": "Mahashian Di Hatti Private Limited (MDH)",
+      "cin": "U74899DL1965PTC004434",
+      "gs1Prefix": "8901047",
+      "fssaiLicense": "10012011000085",
+      "sector": "Spices & Condiments",
+      "address": "MDH House, 9/44, Kirti Nagar Industrial Area, New Delhi - 110015, Delhi",
+      "customerCare": "1800-11-2244 / mdh@mdhspices.in",
+      "brands": [
+        "MDH", "MDH Deggi Mirch", "MDH Chaat Masala", "MDH Garam Masala", "MDH Chunky Chat", "MDH Kitchen King", "MDH Chana Masala"
+      ],
+      "spoofVariants": [
+        {"spoof": "M.D.H.", "target": "MDH", "type": "Punctuation Insertion", "risk": "HIGH"},
+        {"spoof": "MDH Degi Mirch", "target": "MDH Deggi Mirch", "type": "Consonant Deletion", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_vadilal",
+      "name": "Vadilal Industries Limited",
+      "cin": "L91110GJ1982PLC005169",
+      "gs1Prefix": "8901777",
+      "fssaiLicense": "10012021000214",
+      "sector": "Ice Creams & Frozen Foods",
+      "address": "Vadilal House, 53 Shrimali Society, Navrangpura, Ahmedabad - 380009, Gujarat",
+      "customerCare": "1800-258-7755 / vadilal@vadilalgroup.com",
+      "brands": [
+        "Vadilal", "Vadilal Ice Creams", "Quick Treat", "Vadilal Gourmet", "Flingo", "Badabite"
+      ],
+      "spoofVariants": [
+        {"spoof": "Vadeelal", "target": "Vadilal", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Vadilal Pure", "target": "Vadilal", "type": "Suffix Pass-off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_heritage",
+      "name": "Heritage Foods Limited",
+      "cin": "L15209TG1992PLC014332",
+      "gs1Prefix": "8904088",
+      "fssaiLicense": "10014047000258",
+      "sector": "Dairy Products",
+      "address": "H.No. 8-2-293/82/A/1286, Plot No: 1286, Road No: 36, Jubilee Hills, Hyderabad - 500033, Telangana",
+      "customerCare": "1800-425-4555 / customercare@heritagefoods.in",
+      "brands": [
+        "Heritage", "Heritage Milk", "Heritage Curd", "Heritage Paneer", "Heritage Ghee", "Heritage Buttermilk"
+      ],
+      "spoofVariants": [
+        {"spoof": "Heritaje", "target": "Heritage", "type": "Consonant Swap", "risk": "CRITICAL"},
+        {"spoof": "Heritage Gold Milk", "target": "Heritage Milk", "type": "Pass-off Insertion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_hatsun",
+      "name": "Hatsun Agro Product Limited",
+      "cin": "L15499TN1986PLC012747",
+      "gs1Prefix": "8904001",
+      "fssaiLicense": "10012042000185",
+      "sector": "Dairy & Ice Cream",
+      "address": "Domaine, Rajiv Gandhi Salai (OMR), Karapakkam, Chennai - 600097, Tamil Nadu",
+      "customerCare": "1800-425-1655 / customercare@hap.in",
+      "brands": [
+        "Hatsun", "Arokya", "Arun Icecreams", "Ibaco", "Oyalo", "Santosa"
+      ],
+      "spoofVariants": [
+        {"spoof": "Arogya Milk", "target": "Arokya", "type": "Phonetic Corruption", "risk": "CRITICAL"},
+        {"spoof": "Arun Ice Cream", "target": "Arun Icecreams", "type": "Space Insertion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_cavinkare",
+      "name": "CavinKare Private Limited",
+      "cin": "U24246TN1990PTC019569",
+      "gs1Prefix": "8902979",
+      "fssaiLicense": "10012042000096",
+      "sector": "Personal Care & Foods",
+      "address": "Cavinville, No. 12, Cenotaph Road, Teynampet, Chennai - 600018, Tamil Nadu",
+      "customerCare": "1800-419-0688 / consumercare@cavinkare.com",
+      "brands": [
+        "Chik", "Meera", "Karthika", "Nyle", "Indica", "Spinz", "Raaga", "Cavin's", "Ruchi Pickles"
+      ],
+      "spoofVariants": [
+        {"spoof": "Chikk Shampoo", "target": "Chik", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Meera Herbal", "target": "Meera", "type": "Affix Pass-off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_jyothy",
+      "name": "Jyothy Labs Limited",
+      "cin": "L24240MH1992PLC128651",
+      "gs1Prefix": "8901844",
+      "fssaiLicense": "10012022000344",
+      "sector": "Fabric & Home Care",
+      "address": "Ujala House, Ramkrishna Mandir Road, Kondivita, Andheri (East), Mumbai - 400059, Maharashtra",
+      "customerCare": "1800-103-2992 / customercare@jyothy.com",
+      "brands": [
+        "Ujala", "Henko", "Pril", "Exo", "Maxo", "Margo", "Neem Active", "Ujala Supreme"
+      ],
+      "spoofVariants": [
+        {"spoof": "Ujaala", "target": "Ujala", "type": "Vowel Duplication", "risk": "CRITICAL"},
+        {"spoof": "Exxo Dishwash", "target": "Exo", "type": "Letter Duplication", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_crompton",
+      "name": "Crompton Greaves Consumer Electricals Limited",
+      "cin": "L31900MH2015PLC262254",
+      "gs1Prefix": "8904222",
+      "fssaiLicense": "NA (BIS)",
+      "sector": "Electrical Appliances",
+      "address": "Equinox Business Park, 1st Floor, Tower 3, LBS Marg, Kurla (West), Mumbai - 400070, Maharashtra",
+      "customerCare": "1800-419-0505 / crompton.care@crompton.co.in",
+      "brands": [
+        "Crompton", "Crompton Greaves", "Solarium", "Aura", "Energion", "SilentPro"
+      ],
+      "spoofVariants": [
+        {"spoof": "Cromton", "target": "Crompton", "type": "Letter Deletion", "risk": "CRITICAL"},
+        {"spoof": "Crompton Plus", "target": "Crompton", "type": "Suffix Pass-off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_vguard",
+      "name": "V-Guard Industries Limited",
+      "cin": "L31200KL1996PLC010010",
+      "gs1Prefix": "8904043",
+      "fssaiLicense": "NA (BIS)",
+      "sector": "Electrical Appliances & Cables",
+      "address": "42/962, Vennala High School Road, Vennala, Kochi - 682028, Kerala",
+      "customerCare": "1800-103-1300 / customercare@vguard.in",
+      "brands": [
+        "V-Guard", "Pebbles", "Crystal", "Verano", "Enviro", "V-Guard Stabilizer"
+      ],
+      "spoofVariants": [
+        {"spoof": "V-Gard", "target": "V-Guard", "type": "Vowel Deletion", "risk": "CRITICAL"},
+        {"spoof": "VGuard", "target": "V-Guard", "type": "Hyphen Deletion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_polycab",
+      "name": "Polycab India Limited",
+      "cin": "L31300GJ1996PLC114183",
+      "gs1Prefix": "8904128",
+      "fssaiLicense": "NA (BIS)",
+      "sector": "Wires & Electricals",
+      "address": "Polycab House, 771, Mogul Lane, Mahim (West), Mumbai - 400016, Maharashtra",
+      "customerCare": "1800-267-0008 / customercare@polycab.com",
+      "brands": [
+        "Polycab", "Polycab Maxima", "Optima", "Green Wire", "Polycab Hohm"
+      ],
+      "spoofVariants": [
+        {"spoof": "Policab", "target": "Polycab", "type": "Letter Swap (y->i)", "risk": "CRITICAL"},
+        {"spoof": "Polycab Wire", "target": "Polycab", "type": "Suffix Pass-off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_exide",
+      "name": "Exide Industries Limited",
+      "cin": "L31402WB1947PLC014919",
+      "gs1Prefix": "8901449",
+      "fssaiLicense": "NA (Automotive Batteries)",
+      "sector": "Industrial & Automotive Storage",
+      "address": "Exide House, 59E Chowringhee Road, Kolkata - 700020, West Bengal",
+      "customerCare": "1800-103-5454 / exidecare@exide.co.in",
+      "brands": [
+        "Exide", "Exide Mileage", "Exide Matrix", "Exide Epiq", "Exide Inva Tubular", "Dynex"
+      ],
+      "spoofVariants": [
+        {"spoof": "Exxide", "target": "Exide", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Exide Power", "target": "Exide", "type": "Suffix Pass-off", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_amara_raja",
+      "name": "Amara Raja Energy & Mobility Ltd",
+      "cin": "L31402AP1985PLC005305",
+      "gs1Prefix": "8904018",
+      "fssaiLicense": "NA (Automotive Batteries)",
+      "sector": "Storage & Batteries",
+      "address": "Renigunta - Cuddapah Road, Karakambadi, Tirupati - 517520, Andhra Pradesh",
+      "customerCare": "1800-425-2288 / customercare@amararaja.com",
+      "brands": [
+        "Amaron", "Amaron Pro", "Amaron Hi-Life", "Amaron Quanta", "PowerZone"
+      ],
+      "spoofVariants": [
+        {"spoof": "Aamaron", "target": "Amaron", "type": "Vowel Duplication", "risk": "CRITICAL"},
+        {"spoof": "Amaron Green", "target": "Amaron", "type": "Pass-off Addition", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_hero",
+      "name": "Hero MotoCorp Limited",
+      "cin": "L35911DL1984PLC017354",
+      "gs1Prefix": "8901890",
+      "fssaiLicense": "NA (Auto OEM)",
+      "sector": "Automotive & Genuine Spares",
+      "address": "The Grand Plaza, Plot No. 2, Nelson Mandela Road, Vasant Kunj - Phase - II, New Delhi - 110070, Delhi",
+      "customerCare": "1800-266-0018 / customercare@heromotocorp.com",
+      "brands": [
+        "Hero", "Hero Genuine Parts", "Splendor", "HF Deluxe", "Glamour", "Passion", "Xtreme", "Pleasure"
+      ],
+      "spoofVariants": [
+        {"spoof": "Hero Genuine Part", "target": "Hero Genuine Parts", "type": "Letter Deletion", "risk": "CRITICAL"},
+        {"spoof": "Splender", "target": "Splendor", "type": "Vowel Shift", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_bajaj_auto",
+      "name": "Bajaj Auto Limited",
+      "cin": "L65993PN2007PLC130076",
+      "gs1Prefix": "8901990",
+      "fssaiLicense": "NA (Auto OEM)",
+      "sector": "Automotive & Spares",
+      "address": "Mumbai-Pune Road, Akurdi, Pune - 411035, Maharashtra",
+      "customerCare": "1800-233-2453 / customerservice@bajajauto.co.in",
+      "brands": [
+        "Bajaj", "Bajaj Genuine Parts", "Pulsar", "Platina", "Avenger", "Chetak", "Dominar"
+      ],
+      "spoofVariants": [
+        {"spoof": "Pulser", "target": "Pulsar", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Bajaj Part Genuine", "target": "Bajaj Genuine Parts", "type": "Word Inversion", "risk": "HIGH"}
+      ]
+    },
+    {
+      "id": "comp_tvs",
+      "name": "TVS Motor Company Limited",
+      "cin": "L35921TN1992PLC022845",
+      "gs1Prefix": "8901858",
+      "fssaiLicense": "NA (Auto OEM)",
+      "sector": "Automotive & Spares",
+      "address": "Jayalakshmi Estates, 29, Haddows Road, Nungambakkam, Chennai - 600006, Tamil Nadu",
+      "customerCare": "1800-258-7111 / customercare@tvsmotor.com",
+      "brands": [
+        "TVS", "TVS Genuine Parts", "Apache", "Jupiter", "Raider", "XL100", "Ntorq", "Sport"
+      ],
+      "spoofVariants": [
+        {"spoof": "TVS Apachee", "target": "Apache", "type": "Letter Duplication", "risk": "CRITICAL"},
+        {"spoof": "Jupitor", "target": "Jupiter", "type": "Vowel Shift", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_tata_motors",
+      "name": "Tata Motors Limited",
+      "cin": "L28920MH1945PLC004520",
+      "gs1Prefix": "8901824",
+      "fssaiLicense": "NA (Auto OEM)",
+      "sector": "Commercial & Passenger Vehicles",
+      "address": "Bombay House, 24 Homi Mody Street, Fort, Mumbai - 400001, Maharashtra",
+      "customerCare": "1800-209-8282 / customercare@tatamotors.com",
+      "brands": [
+        "Tata Motors", "Tata Genuine Parts", "Tata Prolife", "Nexon", "Harrier", "Safari", "Punch", "Tiago"
+      ],
+      "spoofVariants": [
+        {"spoof": "Tata Motors Spares", "target": "Tata Genuine Parts", "type": "Pass-off Modification", "risk": "HIGH"},
+        {"spoof": "Nexonn", "target": "Nexon", "type": "Letter Duplication", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_mahindra",
+      "name": "Mahindra & Mahindra Limited",
+      "cin": "L65990MH1945PLC004558",
+      "gs1Prefix": "8901768",
+      "fssaiLicense": "NA (Auto OEM)",
+      "sector": "Automotive & Farm Equipment",
+      "address": "Gateway Building, Apollo Bunder, Mumbai - 400001, Maharashtra",
+      "customerCare": "1800-209-6006 / customercare@mahindra.com",
+      "brands": [
+        "Mahindra", "Mahindra Genuine Parts", "Maximile", "Thar", "Scorpio", "XUV700", "Bolero"
+      ],
+      "spoofVariants": [
+        {"spoof": "Mahendra Parts", "target": "Mahindra Genuine Parts", "type": "Vowel Shift", "risk": "CRITICAL"},
+        {"spoof": "Scorpio-N Fake", "target": "Scorpio", "type": "Model Piggybacking", "risk": "CRITICAL"}
+      ]
+    },
+    {
+      "id": "comp_bosch",
+      "name": "Bosch Limited",
+      "cin": "L85110KA1951PLC000761",
+      "gs1Prefix": "8901323",
+      "fssaiLicense": "NA (Auto Components)",
+      "sector": "Auto Components & Technology",
+      "address": "Hosur Road, Adugodi, Bengaluru - 560030, Karnataka",
+      "customerCare": "1800-108-1081 / contact@in.bosch.com",
+      "brands": [
+        "Bosch", "Bosch Spark Plugs", "Bosch Braking", "Bosch Filters", "Bosch Wipers", "Bosch Batteries"
+      ],
+      "spoofVariants": [
+        {"spoof": "Bosh", "target": "Bosch", "type": "Letter Deletion", "risk": "CRITICAL"},
+        {"spoof": "Bosch Spark Plug", "target": "Bosch Spark Plugs", "type": "Plural Omission", "risk": "HIGH"}
+      ]
+    }
+  ]
+}

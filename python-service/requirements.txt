@@ -1,0 +1,10 @@
+flask>=2.3.0
+flask-cors>=4.0.0
+requests>=2.31.0
+numpy>=1.24.0
+rapidocr-onnxruntime
+opencv-python-headless
+zxing-cpp
+rapidfuzz
+google-generativeai
+scikit-image

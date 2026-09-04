@@ -1,0 +1,13 @@
+node_modules/
+server/node_modules/
+venv/
+.venv/
+dist/
+python-service/.pytest_cache/
+python-service/__pycache__/
+python-service/**/__pycache__/
+server/uploads/*
+!server/uploads/.gitkeep
+.vscode/
+.DS_Store
+*.pyc

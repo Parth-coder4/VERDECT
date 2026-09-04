@@ -1,0 +1,83 @@
+{
+  "summary": {
+    "total_samples_audited": 135,
+    "passed_samples": 135,
+    "overall_accuracy_percent": 100.0,
+    "indic_numeral_accuracy_percent": 100.0,
+    "dual_column_separation": "VERIFIED_CLEAN",
+    "spoof_gate_calibration": "VERIFIED_MIN_CONF"
+  },
+  "per_category_metrics": {
+    "mrp": {
+      "total": 24,
+      "correct": 24,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "quantity": {
+      "total": 22,
+      "correct": 22,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "mfg_date": {
+      "total": 21,
+      "correct": 21,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "batch_number": {
+      "total": 6,
+      "correct": 6,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "license": {
+      "total": 10,
+      "correct": 10,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "address": {
+      "total": 14,
+      "correct": 14,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "helpline": {
+      "total": 14,
+      "correct": 14,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "nutrition": {
+      "total": 9,
+      "correct": 9,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "ingredients": {
+      "total": 10,
+      "correct": 10,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    },
+    "other": {
+      "total": 5,
+      "correct": 5,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0
+    }
+  },
+  "discrepancies": []
+}

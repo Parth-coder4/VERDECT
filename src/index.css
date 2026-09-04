@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-sans antialiased selection:bg-sky-500/20 selection:text-sky-500 transition-colors duration-200;
+  }
+}
+
+/* Glass Card with full Dark Mode support */
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 4px 14px -2px rgba(0, 0, 0, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+}
+
+.dark .glass-card {
+  background: rgba(17, 28, 46, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(30, 47, 77, 0.8);
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.4), 0 2px 8px -2px rgba(0, 0, 0, 0.3);
+}
+
+/* Bento Grid */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
+
+/* Status Pills */
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.status-pass {
+  background-color: #ECFDF5;
+  color: #065F46;
+  border: 1px solid #A7F3D0;
+}
+.dark .status-pass {
+  background-color: rgba(6, 78, 59, 0.4);
+  color: #34D399;
+  border: 1px solid rgba(5, 150, 105, 0.5);
+}
+
+.status-fail {
+  background-color: #FEF2F2;
+  color: #991B1B;
+  border: 1px solid #FECACA;
+}
+.dark .status-fail {
+  background-color: rgba(127, 29, 29, 0.35);
+  color: #F87171;
+  border: 1px solid rgba(220, 38, 38, 0.5);
+}
+
+.status-review {
+  background-color: #FFFBEB;
+  color: #92400E;
+  border: 1px solid #FDE68A;
+}
+.dark .status-review {
+  background-color: rgba(120, 53, 15, 0.35);
+  color: #FBBF24;
+  border: 1px solid rgba(217, 119, 6, 0.5);
+}
+
+.status-info {
+  background-color: #F0F9FF;
+  color: #0369A1;
+  border: 1px solid #BAE6FD;
+}
+.dark .status-info {
+  background-color: rgba(12, 74, 110, 0.4);
+  color: #38BDF8;
+  border: 1px solid rgba(2, 132, 199, 0.5);
+}
+
+/* Upload zone */
+.upload-zone {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.upload-zone:hover {
+  border-color: #0284C7;
+  background-color: rgba(2, 132, 199, 0.04);
+}
+.dark .upload-zone:hover {
+  border-color: #38BDF8;
+  background-color: rgba(14, 165, 233, 0.08);
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0B132B;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #1E2F4D;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #0284C7;
+}
+
+/* Reticle scan laser animation */
+@keyframes scan-laser {
+  0% { top: 4%; opacity: 0.85; }
+  50% { top: 92%; opacity: 1; }
+  100% { top: 4%; opacity: 0.85; }
+}
+
+.scan-laser-line {
+  position: absolute;
+  left: 4%;
+  right: 4%;
+  height: 2.5px;
+  background: linear-gradient(90deg, transparent, #38BDF8, #00A3C4, #38BDF8, transparent);
+  box-shadow: 0 0 16px 3px rgba(56, 189, 248, 0.8);
+  animation: scan-laser 2.4s infinite ease-in-out;
+}
+
+/* Glowing card outline on hover */
+.hover-glow {
+  transition: all 0.25s ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 10px 25px -5px rgba(2, 132, 199, 0.2);
+  border-color: rgba(2, 132, 199, 0.4);
+}
+.dark .hover-glow:hover {
+  box-shadow: 0 10px 30px -5px rgba(14, 165, 233, 0.3);
+  border-color: rgba(56, 189, 248, 0.4);
+}

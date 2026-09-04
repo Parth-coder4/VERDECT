@@ -1,0 +1,96 @@
+{
+  "1_Asha_Bhel_Marathi_Pouch": {
+    "brand_name": "काTनIध र",
+    "total_tokens": 2,
+    "detected_languages": [
+      "Hindi (हिंदी)",
+      "Latin (English)"
+    ],
+    "multilingual_tokens_count": 1,
+    "overall_verdict": "NON-COMPLIANT",
+    "compliance_rate": 0.0,
+    "penalty_inr": 80000,
+    "brand_status": "UNREGISTERED_INDEPENDENT",
+    "is_spoof": false,
+    "matched_brand": null,
+    "barcode_detected": false
+  },
+  "2_Dabur_Honey": {
+    "brand_name": "TOKOWMREVISWDM INCLOF BH0706 TEHIBADSA7 REGDOFICECONSUMERCELL 83ASAF ALIROADWI",
+    "total_tokens": 11,
+    "detected_languages": [
+      "Hindi (हिंदी)",
+      "Latin (English)"
+    ],
+    "multilingual_tokens_count": 3,
+    "overall_verdict": "NON-COMPLIANT",
+    "compliance_rate": 33.3,
+    "penalty_inr": 55000,
+    "brand_status": "UNREGISTERED_INDEPENDENT",
+    "is_spoof": false,
+    "matched_brand": null,
+    "barcode_detected": false
+  },
+  "3_Bilsari_Bottle_Spoof": {
+    "brand_name": "BILSARI",
+    "total_tokens": 1,
+    "detected_languages": [
+      "Latin (English)"
+    ],
+    "multilingual_tokens_count": 0,
+    "overall_verdict": "NON-COMPLIANT",
+    "compliance_rate": 0.0,
+    "penalty_inr": 80000,
+    "brand_status": "COUNTERFEIT",
+    "is_spoof": true,
+    "matched_brand": "Bisleri",
+    "barcode_detected": false
+  },
+  "4_Park_Avenue_Samurai_MultiPanel": {
+    "brand_name": "PARK AVENUE",
+    "total_tokens": 41,
+    "detected_languages": [
+      "Hindi (हिंदी)",
+      "Latin (English)"
+    ],
+    "multilingual_tokens_count": 2,
+    "overall_verdict": "COMPLIANT",
+    "compliance_rate": 100.0,
+    "penalty_inr": 0,
+    "brand_status": "GENUINE",
+    "is_spoof": false,
+    "matched_brand": "Park Avenue",
+    "barcode_detected": false
+  },
+  "5_Bella_Vita_Luxury_Perfume": {
+    "brand_name": "LUXURY COLLECTION GENERIC NAMEPERFUME SPRAY THE PERFUMEONYOURNECKBODY AND PULSEPOINTS STORAGESTORE IN A COOL AND DRY PLACEAWAY FROM DIRECT SUNLIGHT WARNINGPATCH TEST RECOMMENDED BEFORE USENATURAL INGREDIENTSMAYLOUDORSEPARATETHISDOESNOT AFFECT THEQUALITY REACH OF CHILDRENDO NOT DRINK OR SPRAY ON EYES OR EFFICACY OF THE PRODUCTKEEP AWAY FROM HEAT 8FIREKEEP OUT OF",
+    "total_tokens": 18,
+    "detected_languages": [
+      "Latin (English)"
+    ],
+    "multilingual_tokens_count": 0,
+    "overall_verdict": "COMPLIANT",
+    "compliance_rate": 100.0,
+    "penalty_inr": 0,
+    "brand_status": "UNREGISTERED_INDEPENDENT",
+    "is_spoof": false,
+    "matched_brand": null,
+    "barcode_detected": false
+  },
+  "6_Surf_Excel_MultiPanel": {
+    "brand_name": "प",
+    "total_tokens": 43,
+    "detected_languages": [
+      "Hindi (हिंदी)",
+      "Latin (English)"
+    ],
+    "multilingual_tokens_count": 5,
+    "overall_verdict": "NON-COMPLIANT",
+    "compliance_rate": 50.0,
+    "penalty_inr": 20000,
+    "brand_status": "GENUINE",
+    "is_spoof": false,
+    "matched_brand": null,
+    "barcode_detected": false
+  }
+}

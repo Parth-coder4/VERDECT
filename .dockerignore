@@ -1,0 +1,10 @@
+node_modules
+server/node_modules
+python-service/.pytest_cache
+python-service/__pycache__
+python-service/**/__pycache__
+dist
+.git
+.vscode
+server/uploads/*
+!server/uploads/.gitkeep
