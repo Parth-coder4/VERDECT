@@ -47,6 +47,12 @@ CORS(app)
 
 # Initialize global OCR Ensemble
 ocr_engine = OCREnsemble()
+try:
+    _warmup_img = np.zeros((100, 100, 3), dtype=np.uint8)
+    ocr_engine.extract_text_and_boxes(_warmup_img)
+    logging.info("OCR Ensemble models pre-warmed successfully.")
+except Exception as _we:
+    logging.warning(f"OCR warmup note: {_we}")
 
 def load_images_from_request(req) -> tuple[np.ndarray | None, list[dict], str]:
     """

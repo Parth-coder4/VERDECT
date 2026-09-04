@@ -38,7 +38,8 @@ WORKDIR $HOME/app
 
 # Install Python microservice dependencies
 COPY --chown=user python-service/requirements.txt ./python-service/
-RUN pip install --no-cache-dir --user -r ./python-service/requirements.txt
+RUN pip install --no-cache-dir --user -r ./python-service/requirements.txt \
+    && python3 -c "from rapidocr_onnxruntime import RapidOCR; RapidOCR()"
 
 # Install Node.js backend dependencies
 COPY --chown=user server/package*.json ./server/

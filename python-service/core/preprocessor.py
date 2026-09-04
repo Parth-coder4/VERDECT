@@ -191,7 +191,7 @@ def sanitize_numeric_string(text: str) -> str:
     }
     return "".join(homoglyph_map.get(ch, ch) for ch in text)
 
-def preprocess_packaging_image(img: np.ndarray, max_dim: int = 1600, apply_dewarp: bool = False) -> tuple[np.ndarray, float]:
+def preprocess_packaging_image(img: np.ndarray, max_dim: int = 1200, apply_dewarp: bool = False) -> tuple[np.ndarray, float]:
     """
     Full preprocessing pipeline:
     1. Aspect-ratio preserving downscale if image is overly large (using INTER_AREA for text edge preservation)

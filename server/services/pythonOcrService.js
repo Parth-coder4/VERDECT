@@ -25,7 +25,7 @@ async function processScanWithPython(frontPath, backPaths = [], rulebook = []) {
       headers: {
         ...form.getHeaders()
       },
-      timeout: 60000
+      timeout: 180000
     });
 
     if (response.data && response.data.status === 'success') {
@@ -69,7 +69,7 @@ async function processCounterfeitWithPython(frontPath, secondaryPaths = []) {
       headers: {
         ...form.getHeaders()
       },
-      timeout: 60000
+      timeout: 180000
     });
 
     if (response.data && response.data.counterfeit_metrics) {
