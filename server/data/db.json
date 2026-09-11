@@ -35995,7 +35995,7 @@
       "avatarBgColor": "bg-sky-500",
       "lastActiveTime": "Active now",
       "accuracyRate": 98.6,
-      "lastLogin": "2026-09-04T14:59:10.163Z"
+      "lastLogin": "2026-09-05T09:14:01.656Z"
     },
     {
       "id": "insp_02",
@@ -36031,6 +36031,18 @@
     }
   ],
   "auditLogs": [
+    {
+      "id": "LOG-AUTH-1788599641656",
+      "timestamp": "2026-09-05T09:14:01.656Z",
+      "userId": "9402-INSP",
+      "userName": "Inspector Vikram Malhotra",
+      "action": "USER_LOGIN",
+      "targetResource": "SESSION-INSPECTOR",
+      "ipAddress": "::ffff:127.0.0.1",
+      "status": "SUCCESS",
+      "category": "AUTH",
+      "details": "INSPECTOR Inspector Vikram Malhotra successfully authenticated via Agency Badge 9402-INSP."
+    },
     {
       "id": "LOG-AUTH-1788540181578",
       "timestamp": "2026-09-04T16:43:01.578Z",
@@ -36562,7 +36574,7 @@
       "inspectionsCompleted": 342,
       "accuracyRate": 99.2,
       "activeStatus": true,
-      "lastLogin": "2026-09-04T14:59:10.163Z"
+      "lastLogin": "2026-09-05T09:14:01.656Z"
     },
     {
       "id": "LMPC-8472",
