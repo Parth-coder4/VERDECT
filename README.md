@@ -43,8 +43,7 @@ The project is structured into three main layers:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/lmpc-inspect-ai.git
-cd lmpc-inspect-ai
+cd VERDECT
 ```
 
 ### 2. Setup the Python Microservice
